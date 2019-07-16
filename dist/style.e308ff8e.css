@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#demo{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background: #9ce22c;   
+    border:4px solid #84c221; 
+    position: absolute;
+    top:0;
+    left:0;
+    box-shadow: 0 4px 8px rgba(0,0,0,.08);
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
