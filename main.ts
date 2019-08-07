@@ -3,16 +3,16 @@ div.id = 'demo'
 
 document.body.appendChild(div)
 
-var x= false
+var isMove = false
 var position = [0,0]
 
 div.onmousedown= (e)=>{
     div.style.boxShadow = '0 5px 12px rgba(0,0,0,.12)'
-    x = true
+    isMove = true
     position =[e.clientX,e.clientY]
 }
 document.onmousemove =(e)=>{
-    if(x===true){
+    if(isMove===true){
         var deltaX = e.clientX - position[0]
         var deltaY = e.clientY - position[1]
         var top = parseInt(div.style.top!) || 0
@@ -24,5 +24,5 @@ document.onmousemove =(e)=>{
 }
 document.onmouseup=(e)=>{
     div.style.boxShadow = '0 4px 8px rgba(0,0,0,.08)'
-    x=false
+    isMove = false
 }
